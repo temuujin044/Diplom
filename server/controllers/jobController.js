@@ -44,3 +44,5 @@ export const getJobById = async (req, res) => {
         res.json({ success: false, message: error.message })
     }
 }
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="aab9e9ae-db58-5edc-9f77-78e83aff1ced")}catch(e){}}();
+//# debugId=aab9e9ae-db58-5edc-9f77-78e83aff1ced

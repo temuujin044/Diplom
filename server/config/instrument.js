@@ -1,27 +1,9 @@
 // Import with `import * as Sentry from "@sentry/node"` if you are using ESM
-import * as Sentry from "@sentry/node"
-import { nodeProfilingIntegration } from "@sentry/profiling-node";
+import * as Sentry from "@sentry/node";
 
 Sentry.init({
-  dsn: "",
-  integrations: [
-    nodeProfilingIntegration(),
-    Sentry.mongooseIntegration()
-  ],
-  // Tracing
-  tracesSampleRate: 1.0, //  Capture 100% of the transactions
+  dsn: "https://2ac0576eae09cc4ab2b2404c5c000b05@o4509109627715584.ingest.us.sentry.io/4509115642937344",
+  integrations: [Sentry.mongooseIntegration()],
 });
-// Manually call startProfiler and stopProfiler
-// to profile the code in between
-Sentry.profiler.startProfiler();
-
-// Starts a transaction that will also be profiled
-Sentry.startSpan({
-  name: "My First Transaction",
-}, () => {
-  // the code executing inside the transaction will be wrapped in a span and profiled
-});
-
-// Calls to stopProfiling are optional - if you don't stop the profiler, it will keep profiling
-// your application until the process exits or stopProfiling is called.
-Sentry.profiler.stopProfiler();
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="af2031f9-329a-566a-9de8-04bddea6b098")}catch(e){}}();
+//# debugId=af2031f9-329a-566a-9de8-04bddea6b098

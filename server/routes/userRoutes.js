@@ -18,3 +18,5 @@ router.get('/applications', getUserJobApplications)
 router.post('/update-resume', upload.single('resume'), updateUserResume)
 
 export default router;
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="b94255aa-56d1-52f8-b019-c6c665e694c7")}catch(e){}}();
+//# debugId=b94255aa-56d1-52f8-b019-c6c665e694c7

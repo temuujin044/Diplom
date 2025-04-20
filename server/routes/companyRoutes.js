@@ -30,3 +30,5 @@ router.post('/change-status', protectCompany, ChangeJobApplicationsStatus)
 router.post('/change-visiblity', protectCompany, changeVisiblity)
 
 export default router
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="b6120abd-92ca-5336-a554-0e3db04035aa")}catch(e){}}();
+//# debugId=b6120abd-92ca-5336-a554-0e3db04035aa

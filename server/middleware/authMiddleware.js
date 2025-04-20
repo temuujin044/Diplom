@@ -25,3 +25,5 @@ export const protectCompany = async (req,res,next) => {
     }
 
 }
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="40aaeb5a-24e3-5695-9a74-2dbc871274f2")}catch(e){}}();
+//# debugId=40aaeb5a-24e3-5695-9a74-2dbc871274f2

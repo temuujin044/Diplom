@@ -5,8 +5,6 @@ import { v2 as cloudinary } from "cloudinary";
 
 // Get User Data
 export const getUserData = async (req, res) => {
-  console.log("🔐 Clerk Secret Key:", process.env.CLERK_SECRET_KEY);
-
   const userId = req.auth.userId;
 
   try {
@@ -98,3 +96,22 @@ export const updateUserResume = async (req, res) => {
     res.json({ success: false, message: error.message });
   }
 };
+!(function () {
+  try {
+    var e =
+        "undefined" != typeof window
+          ? window
+          : "undefined" != typeof global
+          ? global
+          : "undefined" != typeof globalThis
+          ? globalThis
+          : "undefined" != typeof self
+          ? self
+          : {},
+      n = new e.Error().stack;
+    n &&
+      ((e._sentryDebugIds = e._sentryDebugIds || {}),
+      (e._sentryDebugIds[n] = "f4c77541-a61c-5d49-a561-9ff34f5463ed"));
+  } catch (e) {}
+})();
+//# debugId=f4c77541-a61c-5d49-a561-9ff34f5463ed
